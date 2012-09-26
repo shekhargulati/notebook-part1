@@ -8,16 +8,16 @@ rhc app create -a notebook -t jbossas-7 -l <openshift_login_email> -d
 
 ## Adding MongoDB and RockMongo Client Cartridge
 
-'''
+```
 rhc app cartridge add -a notebook -c mongodb-2.0
 rhc app cartridge add -a notebook -c rockmongo-1.1
-'''
+```
 
 ## Pulling code from github and pushing to OpenShift
 
 After you have created the application using rhc create app command and added MongoDB and RockMongoDB client cartridge using rhc app cartridge add command you have to checkout the code from my github. To do that follow the steps mentioned below.
 
-'''
+```
 git remote add notebook -m master git@github.com:shekhargulati/notebook-part1.git
  
 git pull -s recursive -X theirs notebook master
@@ -27,4 +27,4 @@ git add .
 git commit -a -m "notebook application part1 completed"
  
 git push
-'''
+```
