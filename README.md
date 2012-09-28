@@ -22,9 +22,5 @@ git remote add notebook -m master git@github.com:shekhargulati/notebook-part1.gi
  
 git pull -s recursive -X theirs notebook master
  
-git add .
- 
-git commit -a -m "notebook application part1 completed"
- 
 git push
 ```
