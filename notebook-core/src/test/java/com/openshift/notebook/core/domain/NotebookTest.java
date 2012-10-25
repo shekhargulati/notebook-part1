@@ -73,6 +73,8 @@ public class NotebookTest {
 		String json = notebook.toJson();
 
 		Notebook fromJsonToNotebook = Notebook.fromJsonToNotebook(json);
+		
+		System.out.println(fromJsonToNotebook);
 		assertThat(fromJsonToNotebook).isNotNull().isEqualTo(notebook);
 
 	}

@@ -99,10 +99,13 @@ public class Notebook {
 		return notes;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Notebook [id=" + id + ", name=" + name + ", author=" + author
-				+ "]";
+		return "Notebook [id=" + id + ", name=" + name + ", description="
+				+ description + ", created=" + created + ", author=" + author
+				+ ", tags=" + Arrays.toString(tags) + ", notes="
+				+ Arrays.toString(notes) + "]";
 	}
 
 	@Override
@@ -166,7 +169,7 @@ public class Notebook {
 	}
 
 	public static String toJsonArray(Collection<Notebook> collection) {
-		return new JSONSerializer().exclude("*.class").serialize(collection);
+		return new JSONSerializer().include("tags").include("notes.tags").exclude("*.class").serialize(collection);
 	}
 
 	public static Collection<Notebook> fromJsonArrayToNotebooks(String json) {
