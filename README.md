@@ -9,8 +9,8 @@ rhc app create -a notebook -t jbossas-7 -l <openshift_login_email> -d
 ## Adding MongoDB and RockMongo Client Cartridge
 
 ```
-rhc app cartridge add -a notebook -c mongodb-2.0
-rhc app cartridge add -a notebook -c rockmongo-1.1
+rhc cartridge add -a notebook -c mongodb-2.2
+rhc cartridge add -a notebook -c rockmongo-1.1
 ```
 
 ## Pulling code from github and pushing to OpenShift
