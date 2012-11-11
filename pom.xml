@@ -34,7 +34,7 @@
 		</repository>
 		<repository>
 			<id>shekhar-nexus</id>
-			<url>http://nexus-cix.rhcloud.com/nexus/content/groups/public/</url>
+			<url>http://nexus-cix.rhcloud.com/content/groups/public/</url>
 		</repository>
 	</repositories>
 
